@@ -24,3 +24,17 @@ function changefontstyle(){
     var style=document.getElementById("idstyle").value;
     input.style.fontFamily=style;
 }
+
+
+
+/*$(document).ready(function(){
+    $(".icon").hover(function(){
+         $(".view").show();
+    })
+ })
+*/
+$(document).ready(function(){
+    $(".view").click(function(){
+        $("#dialog").dialog();})
+    })
+

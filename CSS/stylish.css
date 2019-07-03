@@ -95,26 +95,7 @@ li a:hover:not(.active){
     text-shadow: 5px 5px 5px rgb(82, 2, 55);
     
 }  
-.bande{
-    display: block;
-    margin-left: 100px;
-    padding-top: 120px;
-    height: 350px;
 
-    
-}
-.icon{
-    margin-right: 100px;
-    
-}
-.icon:hover{
- 
- outline-color: rgb(82, 2, 55);
- outline-style: solid;
- transition:0.2s;
- padding-top: 30px;
-
-}
 .format3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -153,7 +134,7 @@ li a:hover:not(.active){
 }
 .lifeedback{
     font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(170, 33, 124);
     display: block;
     width:25px;
@@ -284,3 +265,39 @@ li a:hover:not(.active){
    -moz-appearance: none;
    appearance: none; 
  }
+ .bande{
+    display: block;
+    margin-left: 100px;
+    padding-top: 120px;
+    height: 350px;   
+}
+.icon{
+    margin-right: 100px; 
+}
+
+
+.icon:hover{
+    outline-color: rgb(82, 2, 55);
+    outline-style: solid;
+    transition:0.2s;
+    transform: scale(1.2,1.2);
+    opacity:0.5;  
+}
+
+.view{
+    position: relative;
+   top: 155px;
+   left: 120px;
+   opacity: 1;
+   display: none;
+   z-index: 10 ;
+}
+
+.cont:hover .view{
+  display: flex;
+}
+
+.cont{
+    position: relative;
+
+}

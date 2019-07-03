@@ -3,11 +3,14 @@
 
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equ v='X-UA-Compatible' content='IE=edge'>
     <title>COURSES</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/stylish.css'>
-    
+
 </head>
 
 <body>
@@ -33,31 +36,59 @@
         </div>
 
     </div>
-    <div class="bande">
-        <div> <img class="icon" src="RES/section3image1.png" width="300px" height="300px" style="float:left"></div>
-        <div> <img class="icon" src="RES/section3image2.png" width="300px" height="300px" style="float:left"></div>
-        <div> <img class="icon" src="RES/section3image3.png" width="300px" height="300px" style="float:left"></div>
+    <div>
+        <div class="bande">
+            <div class="cont">
+                <button class="view"> View More </button>
+                <div>
+                    <img class="icon" src="RES/section3image1.png" width="300px" height="300px" style="float:left">
+                </div>
+            </div>
+            <div class="cont">
+                <button class="view"> View More </button>
+                <div>
+                    <img class="icon" src="RES/section3image2.png" width="300px" height="300px" style="float:left">
+                </div>
+            </div>
+            <div class="cont">
+                <button class="view"> View More </button>
+                <div> <img class="icon" src="RES/section3image3.png" width="300px" height="300px" style="float:left">
+                </div>
+            </div>
+        </div>
+        <div class="bande">
+            <button class="view"> View More </button>
+            <div>
+                <img class="icon" src="RES/section3image1.png" width="300px" height="300px" style="float:left">
+            </div>
+            <button class="view"> View More </button>
+            <div>
+                <img class="icon" src="RES/section3image2.png" width="300px" height="300px" style="float:left">
+            </div>
+            <button class="view"> View More </button>
+            <div> <img class="icon" src="RES/section3image3.png" width="300px" height="300px" style="float:left">
+            </div>
+        </div>
+        <div title="GoMyCode" id="dialog">
+            Each track has its own goal
+            By adopting this goal, you chose ur own track.
+        </div>
     </div>
-    <div class="bande">
-        <div> <img class="icon" src="RES/section3image1.png" width="300px" height="300px" style="float:left"></div>
-        <div> <img class="icon" src="RES/section3image2.png" width="300px" height="300px" style="float:left"></div>
-        <div> <img class="icon" src="RES/section3image3.png" width="300px" height="300px" style="float:left"></div>
-    </div>
-<hr class="trait" > 
-    <h1 class="format2mini"> FeedBack </h1>
+    <hr class="trait">
+    <h1 id="11" class="format2mini"> FeedBack </h1>
     <div class="barre">
         <ul class="ulfeedback">
             <li> <button onclick="changeBold()" class="lifeedback bolder"> <b> B </b> </button> </li>
             <li> <button onclick="changeItalic()" class="lifeedback italic"> <i> I</i></button> </li>
             <li> <button onclick="changeunderline()" class="lifeedback underline "> Underline </button> </li>
-            <select id="idsize" onchange="changefontsize()" class="selection size iconsize" >
-                    <option value="12px">12</option>
-                    <option value="14px">14</option>
-                    <option value="16px">16</option>
-                    <option value="18px">18</option>
-                    <option value="20px">20</option>
-                </select>
-            <select  id="idstyle" onchange="changefontstyle()" class="selection iconstyle">
+            <select id="idsize" onchange="changefontsize()" class="selection size iconsize">
+                <option value="12px">12</option>
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+            </select>
+            <select id="idstyle" onchange="changefontstyle()" class="selection iconstyle">
                 <option value="Georgia">Georgia</option>
                 <option value="Trebuchet MS">Trebuchet MS</option>
                 <option value="Gill Sans">Gill Sans</option>
@@ -66,9 +97,10 @@
             </select>
             <br>
             <br>
-            <textarea id="inputformat" class="selectiontext" cols="50" rows="5" placeholder="    write your feedback here"></textarea>
+            <textarea id="inputformat" class="selectiontext" cols="50" rows="5"
+                placeholder="    write your feedback here"></textarea>
         </ul>
-        
+
     </div>
 
 
