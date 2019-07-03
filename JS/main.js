@@ -25,16 +25,20 @@ function changefontstyle(){
     input.style.fontFamily=style;
 }
 
-
-
-/*$(document).ready(function(){
-    $(".icon").hover(function(){
-         $(".view").show();
-    })
- })
-*/
 $(document).ready(function(){
     $(".view").click(function(){
         $("#dialog").dialog();})
     })
 
+$(document).ready(function(){
+    $(".view").click(function(){
+        $("#dialog2").dialog();})
+        })
+$(document).ready(function(){
+ $("#dialog").hide();
+                })
+    
+$(document).ready(function(){
+$("#dialog2").hide();
+})
+                       

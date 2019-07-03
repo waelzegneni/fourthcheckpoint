@@ -280,8 +280,7 @@ li a:hover:not(.active){
     outline-color: rgb(82, 2, 55);
     outline-style: solid;
     transition:0.2s;
-    transform: scale(1.2,1.2);
-    opacity:0.5;  
+     
 }
 
 .view{
@@ -291,11 +290,21 @@ li a:hover:not(.active){
    opacity: 1;
    display: none;
    z-index: 10 ;
+   width: 100px;
+   height: 30px;
+   padding-left: 15px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 15px;
 }
 
 .cont:hover .view{
   display: flex;
 }
+.cont:hover .icon{
+    transform: scale(1.2,1.2);
+    opacity:0.5; 
+  }
+
 
 .cont{
     position: relative;
